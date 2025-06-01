@@ -1,4 +1,4 @@
-name: "Hola Actions"
+name: "My First Actions"
 
 on:
   push:
@@ -9,7 +9,9 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:                    
-        - run: echo "Hola Actions"
-        - run: echo "haciendo algo"
-        - run: echo "sigo haciendo algo"
-        - run: echo "ya termine"
+        - run: echo "Pulling the latest changes"
+        - run: echo "Running migrations"
+        - run: echo "Running binaries"
+        - run: echo "Running tests"
+        - run: echo "Deploying to production"
+        - run: echo "Deployment complete"
