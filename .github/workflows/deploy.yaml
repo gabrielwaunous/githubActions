@@ -17,7 +17,7 @@ jobs:
 
     steps:
       - name: second Jobs steps
-        run: echo "Second Job: ${{ github.ref }}"
+        run: echo "Second Job ${{ github.ref }}"
 
   third_job:
     if: ${{ github.ref == 'refs/heads/Development' }}
