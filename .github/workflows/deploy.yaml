@@ -10,7 +10,7 @@ jobs:
         - name: Hola Mundo
           run: echo "Hola Mundo"
         - name: Actions
-          uses: 
+          
   second_job:
     needs: first_job
     runs-on: ubuntu-latest
