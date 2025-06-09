@@ -1,17 +1,20 @@
-name: "My First Actions"
+name: "Deploy to Server"
 
-on:
-  push:
-    branches:
-      - main
+on: push
 
 jobs:
-  deploy:
+  first_job:
     runs-on: ubuntu-latest
+
     steps:                    
-        - run: echo "Pulling the latest changes"
-        - run: echo "Running migrations"
-        - run: echo "Running binaries"
-        - run: echo "Running tests"
-        - run: echo "Deploying to production"
-        - run: echo "Deployment complete"
+        - name: Hola Mundo
+          run: echo "Hola Mundo"
+
+jobs:
+  second_job:
+  runs-on: ubuntu-latest
+  needs: first_job
+
+  steps:
+    - name: second Jobs steps
+      run: echo "Second Job"
